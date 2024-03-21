@@ -1,3 +1,11 @@
+:root {
+    --blue: #90E0F3;
+    --lightblue: #75f4f4;
+    --purple: #B8B3E9;
+    --pink: #D999B9;
+    --red: #D17B88;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,11 +13,9 @@ body{
     min-width: 375px;
 }
 
-.container-site{
-    background: black;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+h1, p{
+    margin: 0;
+    padding: 0;
 }
 
 .max-width{
@@ -21,7 +27,7 @@ body{
 }
 
 header{
-    background: red;
+    background: var(--pink);
     width: 100%;
 }
 
@@ -32,6 +38,7 @@ header{
     align-items: center;
     height: 50px;
 }
+
 .container-logo{
     min-width: 100px;
     display: flex;
@@ -80,16 +87,92 @@ header{
 /*MAIN*/
 
 main{
-    background: green;
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .container-main{
-    background: yellow;
+    background: red;
     display: flex;
     margin: auto;
-    justify-content: space-between;
-    align-items: center;
 }
+
+
+
+
+
+/*BANNER*/
+.container-main .container-banner{
+    padding: 20px 10px;
+    text-align: center;
+    display: grid;
+    margin-inline: auto;
+}
+
+.container-main .container-banner p{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.container-main .container-banner form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-main .container-banner form input{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.container-main .container-banner form button{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: var(--purple);
+    color: white; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.container-main .container-banner form button:hover {
+    box-shadow: 0 0 0 3px rgba(184, 179, 233, 0.5); /* Add focus style with a thicker border */
+}
+
+
+
+
+
+/*TWO*/
+
+.container-2{
+    height: 60vh;
+}
+
+
+
+
+
+
+
 
 
 
@@ -121,10 +204,22 @@ footer{
 
 
 
+
+
 @media only screen and (min-width: 1024px) {
 
     .container-header li{
         padding-right: 40px;
+    }
+
+    .container-main .container-banner{
+        padding: 50px 100px;
+        width: 50%;
+    }
+
+    .container-main .container-banner p{
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
 

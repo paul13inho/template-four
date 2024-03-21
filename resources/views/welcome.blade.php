@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="container-site">
+
     <header>
         <div class="container-header max-width min-width">
             <div class="container-logo">
@@ -25,7 +25,24 @@
 
     <main>
         <div class="container-main max-width min-width">
-            <p>main</p>
+            <div class="container-banner">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid beatae doloribus ducimus incidunt, magni maxime molestiae placeat quis saepe similique voluptatum. Alias, cumque dicta dolorem iusto mollitia quaerat voluptatibus.
+                </p>
+
+                <form action="">
+                    @csrf
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                    <label for="money">how much do you need?</label>
+                    <input type="number" id="money">
+                    <button>finding it for you</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <p>hi</p>
         </div>
     </main>
 
@@ -35,7 +52,7 @@
         </div>
 
     </footer>
-</div>
+
 
 
 </body>
